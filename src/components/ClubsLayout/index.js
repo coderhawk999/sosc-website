@@ -9,6 +9,7 @@ const ClubsLayout = ({ children }) => {
         <div id="flexContainer">
             <NavBar/>
             <div style={{
+                backgroundColor:'white',
                 marginTop: "65px"
             }}>
                 { children }

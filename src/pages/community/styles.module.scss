@@ -1,0 +1,138 @@
+@import "../../sass/partials/variables";
+
+.section
+{
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+   @media #{$media-mobile} {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media #{$media-small} {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+.sectionHead
+{
+
+
+    @media #{$media-mobile}{
+        margin-top: 20px;
+    }
+    @media #{$media-small}{
+        margin-top: 20px;
+  }
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    .title{
+        font-weight: 600;
+        font-size: 35px;
+    }
+   .content
+    {
+       padding-bottom: 50px;
+    }
+    .sectionlinks
+    {
+        margin-bottom: 80px;
+      
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+        .button
+        {
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 13px;
+            min-width: 160px;
+            margin-top: 30px;
+            border: 1px;
+            border-radius: 25px;
+            text-align: center;
+            padding: 11px;
+            padding-right: 20px;
+            height: 20px;
+            width: 60px;
+            
+            text-decoration: none;
+            color:white;
+
+            .image
+            {
+                margin-right:2px; 
+            }
+        }
+        .Twitter
+        {
+            background-color: #00acee;
+        }
+        .Whatsapp
+        {
+            background-color: #25D366;
+        }
+        .Instagram
+        {
+            background-color: #f2003c;
+        }
+        .Telegram
+        {
+            background-color: #0088cc;
+        }
+        .Gmail
+        {
+            background-color: #D44638;
+        }
+    }
+}
+
+.imageSection
+{   
+
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  
+
+  @media #{$media-mobile}{
+      margin-bottom: 50px;
+  }
+  @media #{$media-small}{
+    margin-bottom: 50px;
+}
+   .heroimage
+   {
+       margin-top: 40px;
+       margin-left: 50px;
+      width: 400px;
+      height: 100%;
+
+     
+      @media #{$media-mobile} {
+        width:400px;
+        height:100%;
+        margin-top: 0px;
+       margin-left: 0px;
+       
+      }
+    
+      @media #{$media-small} {
+        width:380px;
+        height:100%;
+        margin-top: 0px;
+       margin-left: 0px;
+      }
+   }
+    
+}
+}
